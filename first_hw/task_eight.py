@@ -5,3 +5,19 @@
 # o	x=34; y=-30 -> 4
 # o	x=2; y=4-> 1
 # o	x=-34; y=-30 -> 3
+
+
+abscissa = float(input("Введите Х = "))
+ordinates = float(input("Введите У = "))
+if abscissa > 0 and ordinates > 0:
+    print("Это 1 четверь")
+elif abscissa > 0 and ordinates < 0:
+    print("Это 4 четверь")
+elif abscissa < 0 and ordinates > 0:
+    print("Это 2 четверь")
+elif abscissa < 0 and ordinates < 0:
+    print("Это 3 четверь")
+elif abscissa == 0:
+    print("Точка лежит на оси х")
+elif ordinates == 0:
+    print("Точка лежит на оси y")
