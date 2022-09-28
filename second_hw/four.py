@@ -13,7 +13,7 @@ def create_list(num):
     print(list_for)
     position_first = int(input("Ведите первую позицию "))
     position_second = int(input("Ведите вторую позицию "))
-    product = list_for[position_first + 1] * list_for[position_second + 1]
+    product = list_for[position_first - 1] * list_for[position_second - 1]
     print(product)
 
 
