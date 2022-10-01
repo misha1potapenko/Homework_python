@@ -11,7 +11,10 @@ print(rand_list)
 
 def shake_list(rand_list):
     for i in range(0, 10):
-        rand_list[i] = rand_list[random.randrange(1, 10)]
+        temp1 = random.randrange(1, 10)
+        temp2 = rand_list[i]
+        rand_list[i] = rand_list[temp1]
+        rand_list[temp1] = temp2
     print(rand_list)
 
 
